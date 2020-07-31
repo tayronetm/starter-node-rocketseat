@@ -10,13 +10,13 @@ Dependencies:
 7. CORS (Access application)
 
 Install image Mongo using Docker:
-docker pull mongo*
+```docker pull mongo*```
 
 Up container
-docker run --name mongodb -p 27017:27017 -d mongo*
+```docker run --name mongodb -p 27017:27017 -d mongo*```
 
 Check container running | check all
-docker ps | docker ps -a
+```docker ps | docker ps -a```
 
 Run project with:
-npm run start
+```npm run start```
