@@ -7,6 +7,7 @@ Dependencies:
 4. Nodemon (Auto refresh)
 5. Robomongo (Access localhost:3001 to create database nodeapi)
 6. Mongoose Paginate
+7. CORS (Access application)
 
 Install image Mongo using Docker:
 docker pull mongo*
