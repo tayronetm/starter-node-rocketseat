@@ -6,6 +6,7 @@ Dependencies:
 3. Require Dir (Import schemas)
 4. Nodemon (Auto refresh)
 5. Robomongo (Access localhost:3001 to create database nodeapi)
+6. Mongoose Paginate
 
 Install image Mongo using Docker:
 docker pull mongo*

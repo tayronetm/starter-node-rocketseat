@@ -3,7 +3,11 @@ const Product = mongoose.model('Product');
 
 module.exports = {
 	async list(req, res) {
-		const products = await Product.find();
+		// PAGINATE: PRIMEIRO PARAMENTO É O FILTRO E O SEGUNDO
+		// A PAGINA ATUAL E O LIMITE DE ITEMS A SER EXIBIDO
+		// QUERY PARAM
+		const { page = 1 } = req.query;
+		const products = await Product.paginate({ }, { page, limit: 10});
 		return res.json(products);
 	},
 
